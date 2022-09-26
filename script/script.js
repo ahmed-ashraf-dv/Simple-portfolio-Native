@@ -37,7 +37,7 @@ let lengths = (e) => {
 // Ubdate Date Every Second
 setInterval(() => {
   let today = Math.floor(Date.now() / 1000);
-  let difrent = new Date("2023-02-01").getTime() / 1000 - today;
+  let difrent = new Date("2080-02-01").getTime() / 1000 - today;
   Seconds.textContent = lengths(difrent % 60);
   Minutes.textContent = lengths((difrent / 60) % 60);
   Hours.textContent = lengths((difrent / 60 / 60) % 60);
